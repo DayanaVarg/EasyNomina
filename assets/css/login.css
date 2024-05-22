@@ -9,12 +9,12 @@
 :root{
     --body_color:#F0EEEE;
     --colorWhite: #ffffff;
-    --color1:#544A0D;
-    --color2:#BFAA1E;
+    --color1:#0d2054;
+    --color2:#1e91bf;
 
     /*botones*/
-    --color3:#EFD425;
-    --color4:#d7bf21;
+    --color3:#259eef;
+    --color4:#218ed7;
 
     /*color input*/
     --bacInput: #e7e5e586;
