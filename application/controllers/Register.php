@@ -7,7 +7,7 @@ class Register extends CI_Controller{
     public function __construct() {
         parent::__construct();
 		$this->load->database();
-        $this->load->model('Admin');
+        $this->load->model('Admins');
 		$this->load->library(array('session'));
     }
 
@@ -23,7 +23,7 @@ class Register extends CI_Controller{
         $email = $this->input->post('email');
         $password = password_hash($this->input->post('pass'), PASSWORD_DEFAULT);
 
-        if(!$this->Admin->searchAdmin($iden)){
+        if(!$this->Admins->searchAdmin($iden)){
             $datos = array(
                 'IDENTIFICATION'=>$iden,
                 'NAME'=>$name,
@@ -33,7 +33,7 @@ class Register extends CI_Controller{
                 'PASSWORD' => $password,
             );
 
-            if(!$this->Admin->createAdmin($datos)){
+            if(!$this->Admins->createAdmin($datos)){
                 $data['msg'] = 'Ocurrió un error al insertar los datos, vuelve a intentarlo';
                 $this->load->view('admin/register', $data);
             }

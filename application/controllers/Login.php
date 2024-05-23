@@ -39,13 +39,13 @@ class Login extends CI_Controller {
 				'is_logged' => TRUE,
             );
 			$this->session->set_userdata($data);
-			redirect(base_url('admin/dashboard'));
+			redirect(base_url('employee/showEmployee'));
 		
 		}
 	}
 
 	public function logout(){
-		$vars = array('identification', 'name','lastname',  'phone' , 'email','pass', 'is_logged');
+		$vars = array('IDENTIFICATION', 'NAME','LASTNAME',  'PHONE' , 'EMAIL','PASS', 'is_logged');
 		$this->session->unset_userdata($vars);
 		$this->session->sess_destroy();
 		redirect('login');

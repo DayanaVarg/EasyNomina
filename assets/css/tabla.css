@@ -2,12 +2,12 @@
 /*-------------------- Historial Tabla ----------------- */
 
 .btnD{
-	margin-left: 35%;
+	margin-left: 20%;
 	
 }
 
 .btnD button{
-	width: 100px;
+	width: 200px;
     font-weight: 400;
     font-family: var(--body-font);
     font-size: 15px;
@@ -147,21 +147,6 @@
 }
 
 
-/*button*/
-
-.table .contT tbody td .button1{
-	height: 35px;
-	width: 90%;
-	margin-top: -10px;
-	text-align: center;
-	border: none;
-	border-radius: 2rem;
-	font-family: var(--body-font);
-	color:var(--colorWhite);
-	font-size: 14px;
-	cursor: pointer;
-}
-
 .btnelm{
 	background: var(--colorGrey);
 }
@@ -175,7 +160,7 @@
 
 .table .contT tbody td .button2{
 	height: 35px;
-	width: 60%;
+	width: 100%;
 	margin-top: -10px;
 	text-align: center;
 	border: none;
@@ -185,4 +170,5 @@
 	font-size: 14px;
 	cursor: pointer;
 }
+
 
